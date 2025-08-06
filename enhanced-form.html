@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 2rem;
+      background: #f4f4f4;
+      color: #333;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    fieldset {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border: 1px solid #999;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 0.75rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      box-sizing: border-box;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      
+
+    }
+    button {
+      padding: 0.6rem 1.2rem;
+      background: #005a9c;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Enhanced HTML5 Showcase</h1>
+    <p>This page demonstrates the use of html table, list and form elements.</p>
+
+  </header>
+
+  <section>
+    <h2>My Favorite Meals</h2>
+    <ul>
+      <li>Fish </li>
+      <li>Rice</li>
+      <li>Roasted Meat</li>
+      <li>Chicken chips</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>My skills</h2>
+    <ol type="i">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+    </ol>
+    
+  </section>
+
+  <section>
+    <h2>My Books</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Year</th>
+                <th>Rating</th>
+            
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>The Great Gatsby</td>
+                <td>F. Scott Fitzgerald</td>
+                <td>Fiction</td>
+                <td>1925</td>
+                <td>4.2</td>
+            </tr>
+            <tr>
+                <td>To Kill a Mockingbird</td>
+                <td>Harper Lee</td>
+                <td>Fiction</td>
+                <td>1960</td>
+                <td>4.3</td>
+            </tr>
+            <tr>
+                <td>1984</td>
+                <td>George Orwell</td>
+                <td>Dystopian</td>
+                <td>1949</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>The Catcher in the Rye</td>
+                <td>J.D. Salinger</td>
+                <td>Fiction</td>
+                <td>1951</td>
+                <td>3.8</td>
+                </tr>
+            </tr>
+            <tr>
+                <td>Pride and Prejudice</td>
+                <td>Jane Austen</td>
+                <td>Romance</td>
+                <td>1813</td>
+                <td>4.6</td>
+            </tr>
+            <tr>
+                <td>The Lord of the Rings</td>
+                <td>J.R.R. Tolkien</td>
+                <td>Fantasy</td>
+                <td>1954</td>
+                <td>4.7</td>
+            </tr>
+            <tr>
+                <td>Brave New World</td>
+                <td>Aldous Huxley</td>
+                <td>Dystopian</td>
+                <td>1932</td>
+                <td>4.1</td>
+            </tr>
+        </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>🎬 Media Section</h2>
+    <figure>
+      <img src="image.png " style="width: 400px; height: 200px;" alt="My Books" />
+      <figcaption>Example image using semantic markup</figcaption>
+    </figure>
+
+    <audio controls>
+      <source src="trumpet fanfare sound effect.mp3" type="audio/mpeg" />
+      Your browser does not support audio.
+    </audio>
+
+    <video width="400" controls>
+      <source src="httpswwwyoutubecomwatchvbgdqzbrvcew.mp4" type="video/mp4" />
+      Your browser does not support video.
+    </video>
+  </section>
+
+  <section>
+    <h2>📨 Contact Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      
+      <fieldset>
+        <legend>👤 Personal Information</legend>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required minlength="3" />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9\-]+" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>⚙️ Preferences</legend>
+        <label for="topic">Interest Area</label>
+        <select id="topic" name="topic" required>
+          <option value="">Select...</option>
+          <option value="development">Web Development</option>
+          <option value="design">Design Concepts</option>
+          <option value="branding">Team Branding</option>
+        </select>
+
+        <label for="color">Favorite Color</label>
+        <input type="color" id="color" name="color" />
+      </fieldset>
+
+      <fieldset>
+        <legend>💬 Feedback</legend>
+        <label for="comments">Your Message</label>
+        <textarea id="comments" name="comments" placeholder="Type your thoughts here..." rows="4" maxlength="500"></textarea>
+
+        <label>
+          <input type="checkbox" name="consent" required /> I agree to terms
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+</body>
+</html>
